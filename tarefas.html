@@ -5,61 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista Tarefas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="top-bar">
-            <div id="logo">
-                <img src="logo.png" alt="Logo" width="20%" height="20%">
-            </div>
-    <div class="navegaçao">
-        <a href="">Home</a>
-        <a href="">Perfil</a>
-        <a href="">Galeria</a>
-        <a href="">Sair</a>
-
-    </div>
+        <div id="logo">
+            <img src="logo.png" alt="Logo" width="30%" height="30%">
+        </div>
+        <div class="navegacao">
+            <a href="#" id="home">Home</a>
+            <a href="perfil.html" id="perfil">Perfil</a>
+            <a href="galeria.html" id="galeria">Galeria</a>
+            <a href="login.html" id="sair">Sair</a>
+        </div>
     </div>
     <h1>Mural de Tarefas</h1>
     <div id="logoproj">
-                <img src="logo_projeto.png" alt="Logo" width="20%" height="20%">
-            </div>
+        <img src="logo_projeto.png" alt="Logo" width="20%" height="20%">
+    </div>
 
-            <div class="anotaçoes">
-                <h3>Minhas Tarefas dia 26/04</h3>
-                <p>Ler um livro</p>
-                <p>Fazer exercícios</p>
-                <p>Estudar HTML e CSS</p>
-            </div>
 
-            <div class="anotaçoes1">
-                <h3>Minhas Tarefas dia 27/04</h3>
-                <p>Arrumar o quarto</p>
-                <p>Ir na academia</p>
-                <p>Estudar mais um pouco sobre HTML e CSS</p>
-            </div>
+    <div class="containerAnotaçoes">
+        <div class="anotaçoes">
+            <h3>Minhas Tarefas dia 26/04</h3>
+            <ul>
+                <li>Ler um livro</li>
+                <li>Fazer exercícios</li>
+                <li>Estudar HTML e CSS</li>
+            </ul>
+        </div>
 
-            <div class="anotaçoes2">
-                <h3>Minhas Tarefas dia 28/04</h3>
-                <p>Ir no mercado</p>
-                <p>Levar bicicleta para arrumar</p>
-                <p>Estudar sobre local Storage</p>
-            </div>
+        <div class="anotaçoes">
+            <h3>Minhas Tarefas dia 27/04</h3>
+            <ul>
+                <li>Arrumar o quarto</li>
+                <li>Ir na academia</li>
+                <li>Estudar mais um pouco sobre HTML e CSS</li>
+            </ul>
+        </div>
 
-            <div class="anotaçoes3">
-                <h3>Minhas Tarefas dia 29/04</h3>
-                <p>Lvar cachorro para passear</p>
-                <p>Usar desodorante</p>
-                <p>Comer lanche com os amigos</p>
-            </div>
+        <div class="anotaçoes">
+            <h3>Minhas Tarefas dia 28/04</h3>
+            <ul>
+                <li>Ir no mercado</li>
+                <li>Levar bicicleta para arrumar</li>
+                <li>Estudar sobre local Storage</li>
+            </ul>
+        </div>
 
-            <div class="anotaçoes4">
-                <h3>Minhas Tarefas dia 30/04</h3>
-                <p>Ir na praça</p>
-                <p>Lavar carro dos pais</p>
-                <p>Estudar sobre JavaScript</p>
-            </div>
-            
+        <div class="anotaçoes">
+            <h3>Minhas Tarefas dia 29/04</h3>
+            <ul>
+                <li>Levar cachorro para passear</li>
+                <li>Usar desodorante</li>
+                <li>Comer lanche com os amigos</li>
+            </ul>
+        </div>
+
+        <div class="anotaçoes">
+            <h3>Minhas Tarefas dia 30/04</h3>
+            <ul>
+                <li>Ir na praça</li>
+                <li>Lavar carro dos pais</li>
+                <li>Estudar sobre JavaScript</li>
+            </ul>
+        </div>
+    </div>
+
+
+
 </body>
 
 </html>

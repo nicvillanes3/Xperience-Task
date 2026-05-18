@@ -1,3 +1,283 @@
 #loginFundo{
-    background-color: pink;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4d4798;
+}
+
+.login{
+    width: 340px;
+    padding: 35px 28px;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.10);
+    border: 1px solid rgba(255,255,255,0.15);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login h1{
+    color: white;
+    font-size: 42px;
+    margin-bottom: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.login label{
+    color: white;
+    font-size: 14px;
+    margin-bottom: 6px;
+    align-self: center;
+    font-weight: bold;
+}
+
+.login input{
+    width: 100%;
+    height: 44px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    padding: 0 12px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    background: white;
+    color: #222;
+}
+
+.login input::placeholder{
+    color: #777;
+}
+
+#entrar{
+   width: 100px;
+    height: 42px;
+    background: #8b8b8b;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 5px;
+    border-top: 1px solid #3d3d3d;
+    border-left: 1px solid #3d3d3d;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+}
+
+#entrar:hover{
+    background: #6f6f6f;
+    transform: scale(1.04);
+}
+
+#esqueceuSenha{
+    margin-top: 22px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    align-self: flex-start;
+}
+
+#esqueceuSenha:hover{
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f7f9fa;
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+
+h1 {
+    text-align: center;
+    font-weight: 800;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#logoproj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.containerAnotaçoes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+.anotaçoes {
+    background-color: #fceb92;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: max-content;
+    margin-top: 30px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.anotaçoes li {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 22px;
+    font-weight: 800;
+    color: #000000;
+    text-align: start;
+}
+
+.top-bar {
+    background-color: #0b4a5a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+}
+
+.navegacao {
+    display: flex;
+    gap: 20px;
+    background-color: #0b4a5a;
+    padding: 10px 20px;
+    margin-right: 280px;
+}
+
+.navegacao a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.navegacao a:hover {
+    color: red;
+}
+
+.top-bar li {
+    list-style: none;
+}
+
+.top-bar a {
+    display: block;
+    padding: 10px 20px;
+}
+
+.perfilCont {
+    width: fit-content;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+
+}
+
+#logoprojperfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.perfilCont h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.perfilCont p {
+    font-size: 15px;
+    margin: 12px 0;
+}
+
+#logoPerfil {
+    width: 300px;
+    height: auto;
+}
+
+#avatarPerfil {
+    width: 150px;
+    height: auto;
+}
+
+#logoprojperfil {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#logoPerfil {
+    width: 250px;
+    height: auto;
+}
+
+.imagensGaleria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.imagensGaleria img {
+    width: 220px;
+    height: auto;
+}
+
+.galeriaCont {
+    width: fit-content;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+
+}
+
+.imagensGaleria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-items: center;
+}
+
+.imagensGaleria img {
+    width: 260px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 5px;
 }

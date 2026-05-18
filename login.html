@@ -5,22 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Xperience Task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body id="loginFundo">
-    <div class="login">
-        <img src="logo_projeto.png" alt="Logo" width="20%" height="20%">
-        <h1>Login</h1>
-        <label for="usuario">Username</label>
-        <input type="text" id="usuario" placeholder="Nome completo" required>
 
-        <label for="senha">Password</label>
-        <input type="password" id="senha" placeholder="Coloque sua senha" required>
+    <form action="tarefas.html">
+        <div class="login">
+            <div id="logoprojperfil">
+                <img id="logoPerfil" src="logo_projeto.png" alt="Logo">
+            </div>
+            <h1>Login</h1>
+            <label for="usuario">Username</label>
+            <input type="text" id="usuario" placeholder="Nome completo" required>
 
-        <button id="entrar">Entrar</button>
-        <a href="#">Esqueceu a senha?</a>
-    </div>
+            <label for="senha">Password</label>
+            <input type="password" id="senha" placeholder="Coloque sua senha" required>
+            <button id="entrar" type="submit">Entrar</button>
+            <a href="#" id="esqueceuSenha">Esqueceu a senha?</a>
+        </div>
+    </form>
+
+    <script>
+
+        const botaoEntrar = document.getElementById("entrar");
+
+        botaoEntrar.addEventListener("mouseover", function () {
+            botaoEntrar.style.backgroundColor = "#6c4cff";
+        });
+
+        botaoEntrar.addEventListener("mouseout", function () {
+            botaoEntrar.style.backgroundColor = "#8b8b8b";
+        });
+
+        const inputs = document.querySelectorAll(".login input");
+
+        inputs.forEach(input => {
+
+            input.addEventListener("focus", function () {
+                input.style.border = "2px solid black";
+            });
+
+            input.addEventListener("blur", function () {
+                input.style.border = "none";
+            });
+
+        });
+
+    </script>
 
 </body>
 
