@@ -281,3 +281,94 @@ h3 {
     object-fit: cover;
     border-radius: 5px;
 }
+
+.top-bar{
+    width: 100%;
+    min-height: 80px;
+    background: #0b4a5a;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#logo img{
+    width: 160px;
+    height: auto;
+    display: block;
+}
+
+.navegacao{
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navegacao a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px){
+
+    .top-bar{
+        justify-content: center;
+        padding: 20px;
+    }
+
+    #logo img{
+        width: 140px;
+    }
+
+    .navegacao{
+        width: 100%;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .navegacao a{
+        font-size: 15px;
+    }
+
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 480px){
+
+    .top-bar{
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    #logo img{
+        width: 120px;
+    }
+
+    .navegacao{
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .navegacao a{
+        font-size: 14px;
+    }
+
+}
